@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <base href="/" target="_self" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Title -->
+    <title>8 Thủ Thuật Sử Dụng Hình Ảnh Trong Thiết Kế Website</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- FlatIcon CSS -->
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css" />
+    <!-- Font Awesome Min CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <!-- Mran Menu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="assets/css/additional.css" />
+    <!-- Canonicalization -->
+    <link rel="canonical" href="https://halamedia.vn/blog/thiet-ke-web/thu-thuat-su-dung-hinh-anh-trong-thiet-ke-web/" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/svg" sizes="32x32" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/svg" sizes="16x16" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/svg" sizes="48x48" href="assets/img/favicon.svg" />
+    <link rel="manifest" href="assets/img/site.webmanifest" />
+    <!-- Web Analytics -->
+    <script id="lg-pixel" data-pid="1659" type="text/javascript">
+      var _paq = window._paq || [];
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      _paq.push(["enableHeartBeatTimer", 5]);
+      var myheartbeat = setInterval(function () {
+        _paq.push(["ping"]);
+      }, 1000);
+      setTimeout(function () {
+        clearInterval(myheartbeat);
+      }, 11000);
+      window.addEventListener("beforeunload", function (e) {
+        _paq.push(["ping"]);
+      });
+      (function () {
+        var u = "//secure-analytics.com/";
+        _paq.push(["setTrackerUrl", u + "secure-analytics.php"]);
+        _paq.push(["setSiteId", "20393"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = u + "secure-analytics.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <script id="lgna-dataform" src="https://app.halamedia.vn/api/data/dataforms-pixel.js" data-uid="14402" data-pid="1659"></script>
+    <script id="lg-engage" src="https://app.halamedia.vn/api/data/js/engage.js" data-uid="14402" data-pid="1659"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T94SZ99XXS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T94SZ99XXS");
+    </script>
+  </head>
+
+  <body>
+    <!-- google_translate -->
+    <div style="visibility: hidden; position: absolute" id="google_translate_element"></div>
+    <!-- Start Preloader Area -->
+    <div class="preloader">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader Area -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area">
+      <div class="techmax-responsive-nav">
+        <div class="container">
+          <div class="techmax-responsive-menu">
+            <div class="logo">
+              <a href="/">
+                <p class="white-logo" style="font-size: 22px; color: rgb(248, 241, 241)"><strong>Hala Media</strong></p>
+                <img class="black-logo" src="assets/img/favicon.svg" width="40px" alt="logo của hala media" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="techmax-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="/">
+              <p class="white-logo" style="font-size: 26px; color: rgb(248, 241, 241)"><strong>Hala Media</strong></p>
+              <img class="black-logo" src="assets/img/favicon.svg" width="60px" alt="logo của hala media" />
+            </a>
+            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="/" class="nav-link">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="gioi-thieu/" class="nav-link">Giới Thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="dich-vu/" class="nav-link">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="dich-vu/thiet-ke-website/" class="nav-link">Thiết Kế Website</a>
+                      <a href="dich-vu/seo/" class="nav-link">Dịch Vụ SEO</a>
+                      <a href="dich-vu/ppc/" class="nav-link">Quản Lý PPC</a>
+                      <a href="dich-vu/ppc/quang-cao-google/" class="nav-link">Quản Lý Quảng Cáo Google</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="tuyen-dung/" class="nav-link">Tuyển Dụng</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog/" class="nav-link">Blog <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="blog/marketing/" class="nav-link">Marketing</a>
+                      <a href="blog/seo/" class="nav-link">SEO</a>
+                      <a href="blog/ppc/" class="nav-link">PPC</a>
+                      <a href="blog/thiet-ke-web/" class="nav-link">Thiết Kế Website</a>
+                      <a href="blog/lap-trinh/" class="nav-link">Lập Trình</a>
+                      <a href="blog/truyen-thong-mang-xa-hoi/" class="nav-link">Truyền Thông Mạng Xã Hội</a>
+                      <a href="blog/tin-tuc-hala/" class="nav-link">Tin Tức Hala</a>
+                    </li>
+                  </ul>
+                </li>
+                <li style="bottom: -50px; gap: 8px; border-radius: 4px; border-top: 1px solid #dbeefd" class="other_language d-none bg-white p-2">
+                  <div style="gap: 10px; position: sticky" class="nav-item d-flex justify-content-center">
+                    <div onclick="translateLanguage('vi')" class="vietnam_lang lang">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect y="3.42859" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        <mask id="mask0_0_865" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+                          <rect y="3.42859" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_865)">
+                          <rect y="3.42859" width="24" height="17.1429" fill="#EA403F" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 14.0057L8.97711 16.1607L10.0925 12.6198L7.10886 10.4108L10.8211 10.3774L12 6.85718L13.1789 10.3774L16.8912 10.4108L13.9076 12.6198L15.0229 16.1607L12 14.0057Z"
+                            fill="#FFFE4E"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div onclick="translateLanguage('zh-CN')" class="china_lang lang">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_39)">
+                          <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                          <rect y="3.42856" width="24" height="17.1429" fill="#F1361D" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.71429 10.48L3.69902 11.9166L4.44259 9.55604L2.45352 8.08335L4.92833 8.06106L5.71429 5.71426L6.50024 8.06106L8.97505 8.08335L6.98599 9.55604L7.72955 11.9166L5.71429 10.48Z"
+                            fill="#FFDC42"
+                          />
+                        </g>
+                        <path
+                          d="M11.5669 9.56464L11.769 10.4202L12.6452 10.4923L11.894 10.949L12.0961 11.8045L11.4297 11.2312L10.6784 11.6878L11.0178 10.8768L10.3514 10.3035L11.2275 10.3756L11.5669 9.56464Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M11.0013 6.88648L11.5742 7.5533L12.3854 7.21451L11.9283 7.96542L12.5011 8.63224L11.6457 8.4295L11.1886 9.18041L11.117 8.30421L10.2616 8.10147L11.0728 7.76268L11.0013 6.88648Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M8.79466 4.91728L9.59723 5.27607L10.1865 4.62366L10.0932 5.49782L10.8958 5.85661L10.0356 6.03808L9.9424 6.91224L9.504 6.15023L8.64382 6.3317L9.23306 5.67929L8.79466 4.91728Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M10.2138 12.3588L10.037 13.2193L10.8008 13.6533L9.92775 13.7511L9.75097 14.6116L9.3882 13.8115L8.51519 13.9093L9.16399 13.3171L8.80122 12.517L9.56498 12.951L10.2138 12.3588Z"
+                          fill="#FFDC42"
+                        />
+                        <defs>
+                          <clipPath id="clip0_0_39">
+                            <rect y="3.42856" width="24" height="17.1429" rx="1.71" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div onclick="translateLanguage('en')" class="english_lang lang">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        <mask id="mask0_0_69" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+                          <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_69)">
+                          <rect y="3.42856" width="24" height="17.1429" fill="#0A17A7" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M-1.09926 1.78589L9.14286 8.69428V2.2857H14.8571V8.69428L25.0993 1.78589L26.3774 3.68083L18.2797 9.14284H24V14.8571H18.2797L26.3774 20.3191L25.0993 22.2141L14.8571 15.3057V21.7143H9.14286V15.3057L-1.09926 22.2141L-2.37741 20.3191L5.72035 14.8571H3.57628e-06V9.14284H5.72035L-2.37741 3.68083L-1.09926 1.78589Z"
+                            fill="white"
+                          />
+                          <path d="M16.0011 8.85614L26.8572 1.71426" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M17.1538 15.1693L26.8857 21.7289" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M6.86188 8.83752L-3.28928 1.99628" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M7.96289 15.0899L-3.28928 22.5518" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0 13.7143H10.2857V20.5714H13.7143V13.7143H24V10.2857H13.7143V3.42856H10.2857V10.2857H0V13.7143Z"
+                            fill="#E6273E"
+                          />
+                        </g>
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="other-option">
+                <a class="default-btn nav-btn-1" href="https://app.halamedia.vn/">Khách Hàng Đăng Nhập <span></span></a>
+                <a class="default-btn" href="lien-he/">Nhận Báo Giá <span></span></a>
+                <div
+                  onclick="handleSelectLanguage()"
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    box-shadow: 0 2px 15px rgb(123, 104, 238, 0.15);
+                    position: relative;
+                  "
+                  class="option_language ml-3 bg-white d-flex align-items-center justify-content-center"
+                >
+                  <div class="select_language">
+                    <div class="vietnam_lang lang_select active">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect y="3.42859" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        <mask id="mask0_0_865" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+                          <rect y="3.42859" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_865)">
+                          <rect y="3.42859" width="24" height="17.1429" fill="#EA403F" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 14.0057L8.97711 16.1607L10.0925 12.6198L7.10886 10.4108L10.8211 10.3774L12 6.85718L13.1789 10.3774L16.8912 10.4108L13.9076 12.6198L15.0229 16.1607L12 14.0057Z"
+                            fill="#FFFE4E"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="china_lang lang_select">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_39)">
+                          <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                          <rect y="3.42856" width="24" height="17.1429" fill="#F1361D" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.71429 10.48L3.69902 11.9166L4.44259 9.55604L2.45352 8.08335L4.92833 8.06106L5.71429 5.71426L6.50024 8.06106L8.97505 8.08335L6.98599 9.55604L7.72955 11.9166L5.71429 10.48Z"
+                            fill="#FFDC42"
+                          />
+                        </g>
+                        <path
+                          d="M11.5669 9.56464L11.769 10.4202L12.6452 10.4923L11.894 10.949L12.0961 11.8045L11.4297 11.2312L10.6784 11.6878L11.0178 10.8768L10.3514 10.3035L11.2275 10.3756L11.5669 9.56464Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M11.0013 6.88648L11.5742 7.5533L12.3854 7.21451L11.9283 7.96542L12.5011 8.63224L11.6457 8.4295L11.1886 9.18041L11.117 8.30421L10.2616 8.10147L11.0728 7.76268L11.0013 6.88648Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M8.79466 4.91728L9.59723 5.27607L10.1865 4.62366L10.0932 5.49782L10.8958 5.85661L10.0356 6.03808L9.9424 6.91224L9.504 6.15023L8.64382 6.3317L9.23306 5.67929L8.79466 4.91728Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M10.2138 12.3588L10.037 13.2193L10.8008 13.6533L9.92775 13.7511L9.75097 14.6116L9.3882 13.8115L8.51519 13.9093L9.16399 13.3171L8.80122 12.517L9.56498 12.951L10.2138 12.3588Z"
+                          fill="#FFDC42"
+                        />
+                        <defs>
+                          <clipPath id="clip0_0_39">
+                            <rect y="3.42856" width="24" height="17.1429" rx="1.71" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="english_lang lang_select">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        <mask id="mask0_0_69" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+                          <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_69)">
+                          <rect y="3.42856" width="24" height="17.1429" fill="#0A17A7" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M-1.09926 1.78589L9.14286 8.69428V2.2857H14.8571V8.69428L25.0993 1.78589L26.3774 3.68083L18.2797 9.14284H24V14.8571H18.2797L26.3774 20.3191L25.0993 22.2141L14.8571 15.3057V21.7143H9.14286V15.3057L-1.09926 22.2141L-2.37741 20.3191L5.72035 14.8571H3.57628e-06V9.14284H5.72035L-2.37741 3.68083L-1.09926 1.78589Z"
+                            fill="white"
+                          />
+                          <path d="M16.0011 8.85614L26.8572 1.71426" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M17.1538 15.1693L26.8857 21.7289" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M6.86188 8.83752L-3.28928 1.99628" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M7.96289 15.0899L-3.28928 22.5518" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0 13.7143H10.2857V20.5714H13.7143V13.7143H24V10.2857H13.7143V3.42856H10.2857V10.2857H0V13.7143Z"
+                            fill="#E6273E"
+                          />
+                        </g>
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div
+                    style="position: absolute; bottom: -50px; gap: 8px; border-radius: 4px; box-shadow: 0 2px 15px rgb(123, 104, 238, 0.15)"
+                    class="other_languages d-flex bg-white p-2"
+                  >
+                    <div onclick="translateLanguage('vi')" class="vietnam_lang lang">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect y="3.42859" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        <mask id="mask0_0_865" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+                          <rect y="3.42859" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_865)">
+                          <rect y="3.42859" width="24" height="17.1429" fill="#EA403F" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 14.0057L8.97711 16.1607L10.0925 12.6198L7.10886 10.4108L10.8211 10.3774L12 6.85718L13.1789 10.3774L16.8912 10.4108L13.9076 12.6198L15.0229 16.1607L12 14.0057Z"
+                            fill="#FFFE4E"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div onclick="translateLanguage('zh-CN')" class="china_lang lang">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_39)">
+                          <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                          <rect y="3.42856" width="24" height="17.1429" fill="#F1361D" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.71429 10.48L3.69902 11.9166L4.44259 9.55604L2.45352 8.08335L4.92833 8.06106L5.71429 5.71426L6.50024 8.06106L8.97505 8.08335L6.98599 9.55604L7.72955 11.9166L5.71429 10.48Z"
+                            fill="#FFDC42"
+                          />
+                        </g>
+                        <path
+                          d="M11.5669 9.56464L11.769 10.4202L12.6452 10.4923L11.894 10.949L12.0961 11.8045L11.4297 11.2312L10.6784 11.6878L11.0178 10.8768L10.3514 10.3035L11.2275 10.3756L11.5669 9.56464Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M11.0013 6.88648L11.5742 7.5533L12.3854 7.21451L11.9283 7.96542L12.5011 8.63224L11.6457 8.4295L11.1886 9.18041L11.117 8.30421L10.2616 8.10147L11.0728 7.76268L11.0013 6.88648Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M8.79466 4.91728L9.59723 5.27607L10.1865 4.62366L10.0932 5.49782L10.8958 5.85661L10.0356 6.03808L9.9424 6.91224L9.504 6.15023L8.64382 6.3317L9.23306 5.67929L8.79466 4.91728Z"
+                          fill="#FFDC42"
+                        />
+                        <path
+                          d="M10.2138 12.3588L10.037 13.2193L10.8008 13.6533L9.92775 13.7511L9.75097 14.6116L9.3882 13.8115L8.51519 13.9093L9.16399 13.3171L8.80122 12.517L9.56498 12.951L10.2138 12.3588Z"
+                          fill="#FFDC42"
+                        />
+                        <defs>
+                          <clipPath id="clip0_0_39">
+                            <rect y="3.42856" width="24" height="17.1429" rx="1.71" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div onclick="translateLanguage('en')" class="english_lang lang">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        <mask id="mask0_0_69" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="24" height="18">
+                          <rect y="3.42856" width="24" height="17.1429" rx="1.71429" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_0_69)">
+                          <rect y="3.42856" width="24" height="17.1429" fill="#0A17A7" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M-1.09926 1.78589L9.14286 8.69428V2.2857H14.8571V8.69428L25.0993 1.78589L26.3774 3.68083L18.2797 9.14284H24V14.8571H18.2797L26.3774 20.3191L25.0993 22.2141L14.8571 15.3057V21.7143H9.14286V15.3057L-1.09926 22.2141L-2.37741 20.3191L5.72035 14.8571H3.57628e-06V9.14284H5.72035L-2.37741 3.68083L-1.09926 1.78589Z"
+                            fill="white"
+                          />
+                          <path d="M16.0011 8.85614L26.8572 1.71426" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M17.1538 15.1693L26.8857 21.7289" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M6.86188 8.83752L-3.28928 1.99628" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path d="M7.96289 15.0899L-3.28928 22.5518" stroke="#DB1F35" stroke-width="0.571429" stroke-linecap="round" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0 13.7143H10.2857V20.5714H13.7143V13.7143H24V10.2857H13.7143V3.42856H10.2857V10.2857H0V13.7143Z"
+                            fill="#E6273E"
+                          />
+                        </g>
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                        <rect opacity="0.01" width="24" height="24" fill="#D8D8D8" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Start Page Title Area -->
+    <div class="page-title-area item-bg1">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="page-title-content">
+              <h1>8 Thủ Thuật Sử Dụng Hình Ảnh Trong Thiết Kế Website</h1>
+              <ul>
+                <li><a href="/">Trang Chủ</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="blog/thiet-ke-web/">Thiết Kế Web</a></li>
+                <li>Thủ Thuật Sử Dụng Hình Ảnh Trong Thiết Kế Web</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Page Title Area -->
+
+    <!-- Start Blog Details Area -->
+    <section class="blog-details-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div class="blog-details-desc">
+              <div class="article-image">
+                <img
+                  src="assets/img/blog-details/8-thu-thuat-su-dung-hinh-anh-trong-thiet-ke-website.png"
+                  alt="8 thủ thuật sử dụng hình ảnh trong thiết kế website"
+                />
+              </div>
+              <div class="article-content">
+                <div class="entry-meta">
+                  <ul>
+                    <li><span>Đăng Vào:</span> <a href="#"> 6 Tháng 8, 2023</a></li>
+                    <li><span>Đăng Bởi:</span> <a href="#">Hala Team</a></li>
+                  </ul>
+                </div>
+                <h2>8 Thủ Thuật Sử Dụng Hình Ảnh Trong Thiết Kế Website</h2>
+                <p>
+                  Khi bạn bắt đầu thiết kế trang web của mình, bạn sẽ muốn nó tác động tích cực đến đối tượng mục tiêu của mình. Bạn sẽ muốn họ cảm
+                  thấy trang web của bạn thú vị, hấp dẫn để họ ở lại trang web của bạn lâu hơn và tìm hiểu về doanh nghiệp của bạn. Việc thêm các hình
+                  ảnh tùy chỉnh vào các trang con có thể giúp bạn giữ chân khách hàng tiềm năng quan tâm đến trang web của mình.
+                </p>
+                <p>
+                  Hình ảnh là một bổ sung tuyệt vời cho bất kỳ một trang web nào. Chúng giúp chia nhỏ văn bản trên trang web của bạn và cung cấp cho
+                  khách hàng tiềm năng một ví dụ trực quan về những điều bạn đề cập trên trang web của mình. Những hình ảnh này là cơ hội tuyệt vời để
+                  doanh nghiệp của bạn thực sự thu hút khách hàng tiềm năng.
+                </p>
+                <p>Vì vậy, làm thế nào để bạn sử dụng hình ảnh đúng cách trong thiết kế website?</p>
+                <p>
+                  Trên trang này, chúng tôi sẽ cung cấp cho bạn tám thủ thuật để giúp bạn sử dụng hình ảnh một cách chính xác trên trang web của mình.
+                  Nếu bạn cần trợ giúp định hình thiết kế trang web và tích hợp hình ảnh, hãy gọi cho chúng tôi ngay hôm nay theo số 0784 169 491 để
+                  được tư vấn bởi một chuyên gia.
+                </p>
+                <h3>1. Đảm bảo hình ảnh của bạn có liên quan</h3>
+                <p>
+                  Khi bạn thêm hình ảnh vào thiết kế trang web của mình, bạn sẽ muốn đảm bảo rằng chúng có liên quan. Hình ảnh có tác dụng cung cấp
+                  trợ giúp trực quan cho những điều bạn đang thảo luận trên trang web của mình.
+                </p>
+                <p>
+                  Bạn cần phải đảm bảo rằng bạn đang sử dụng hình ảnh có liên quan trên trang web của mình. Nếu bạn đang viết một bài về cách làm yến
+                  chưng hạt sen, thì bạn không nên đưa hình ảnh tô súp cua vào bài đăng của mình. Bởi vì nó không liên quan đến những gì bạn đang
+                  viết.
+                </p>
+                <p>
+                  Hình ảnh của bạn nên có ý nghĩa trên trang. Hãy suy nghĩ về những hình ảnh mà khách hàng của bạn mong muốn nhìn thấy nếu họ truy cập
+                  vào trang web của mình.
+                </p>
+                <p>
+                  Nếu bạn là một công ty in ấn, khách hàng của bạn sẽ muốn xem ảnh chụp máy in, sản phẩm in hoặc công nhân đang lắp đặt hệ thống in.
+                  Đây là những bức ảnh có liên quan giúp nâng cao chất lượng nội dung.
+                </p>
+                <p>
+                  Phần quan trọng là bạn không nên sử dụng hình ảnh chỉ để trang trí. Những hình ảnh nên tăng thêm giá trị cho trang web của bạn và
+                  cung cấp cho khách hàng tiềm năng một hình ảnh đại diện tuyệt vời để nâng cao giá trị của bạn trong mắt họ.
+                </p>
+                <h3>2. Sử dụng ảnh gốc</h3>
+                <p>
+                  Nếu bạn muốn có tác động lớn hơn đến khách hàng mục tiêu của mình, bạn sẽ muốn sử dụng hình ảnh gốc. Hình ảnh gốc sẽ nâng cao tính
+                  xác thực cho trang web của bạn.
+                </p>
+                <p>
+                  Điều này không có nghĩa là bạn không thể sử dụng stock photo. Stock photo có thể là một cách tuyệt vời để nâng cao chất lượng trang
+                  web của bạn, nhưng ảnh gốc mang lại cho người xem cảm giác tốt hơn về doanh nghiệp của bạn.
+                </p>
+                <p>
+                  Bạn có thể sử dụng ảnh gốc về địa điểm kinh doanh, sản phẩm hoặc nhân viên của mình. Nó cung cấp cho khán giả cái nhìn sâu sắc về
+                  doanh nghiệp của bạn và cách mà doanh nghiệp của bạn vận hành. Họ có thể nhận được bản trình bày trực quan về doanh nghiệp của bạn,
+                  và điều này giúp họ hiểu rõ hơn về doanh nghiệp của bạn.
+                </p>
+                <p>
+                  Bằng cách triển khai ảnh gốc, bạn có thể nắm bắt được tính xác thực. Từ đó, bạn có thể cung cấp cho khách hàng những hình ảnh đại
+                  diện trực quan về những cá nhân đang hoạt động trong tổ chức của bạn.
+                </p>
+                <h3>3. Đừng chỉ sử dụng hình ảnh</h3>
+                <p>
+                  Khi ai đó nói “hình ảnh”, bạn có thể nghĩ rằng điều đó chỉ có nghĩa là những bức ảnh bạn chụp bằng máy ảnh. Ảnh không phải là loại
+                  hình ảnh trực quan duy nhất bạn có thể sử dụng trên trang web của mình.
+                </p>
+                <p>
+                  Infographic là loại hình ảnh phổ biến mà nhiều doanh nghiệp đang tìm cách áp dụng. Những đồ họa này là các yếu tố trực quan hiển thị
+                  các dữ kiện, số liệu thống kê và các thông tin quan trọng. Nó là một phương tiện tuyệt vời để thu hút người dùng đọc các thông tin
+                  quan trọng.
+                </p>
+                <p>Ví dụ, thiết kế web cho một nhà máy xử lý nước thải có thể sử dụng infographic để giải thích cách thức hoạt động của nhà máy.</p>
+                <p>
+                  Khi bạn thiết kế trang web của mình, bạn nên chỉ sử dụng hình ảnh. Hình ảnh rất tốt để nâng cao trải nghiệm trên trang web của bạn,
+                  nhưng infographic còn mang lại hơn thế nữa vì nó bắt mắt và thu hút người dùng.
+                </p>
+                <p>
+                  Bạn sẽ muốn đa dạng hình ảnh trên website của mình để thu hút khách hàng. Và nó cũng sẽ nâng cao trải nghiệm của khách truy cập trên
+                  trang web.
+                </p>
+                <h3>4. Hãy suy nghĩ về việc cắt xén và thay đổi kích thước</h3>
+                <p>
+                  Khi bạn chọn một bức ảnh để đưa lên trang web của mình, bạn cần nghĩ xem nó sẽ được chỉnh sửa như thế nào. Điều này rất quan trọng
+                  đối với bất kỳ hình ảnh nào nằm trong tiêu đề hoặc hiển thị nổi bật trên trang web của bạn.
+                </p>
+                <p>
+                  Một số hình ảnh của bạn sẽ cần được cắt để phù hợp với các màn hình khác nhau. Hình ảnh có thể có kích thước đầy đủ trên máy tính để
+                  bàn, nhưng sẽ chỉ có kích thước bằng một nửa trên thiết bị di động. Bạn cần đảm bảo rằng hình ảnh của bạn sẽ được cắt đẹp mắt để tất
+                  cả người dùng sẽ có thể trải nghiệm những bức ảnh như nhau.
+                </p>
+                <p>
+                  Bạn cần xem xét cách bạn sẽ cắt và chia tỷ lệ ảnh. Một số ảnh có thể quá lớn để đặt trên trang web, vì vậy bạn sẽ cần phải thay đổi
+                  kích thước của chúng để đảm bảo chúng trông đẹp mắt. Bạn cũng có thể cần phải cắt xén một số hình ảnh được tích hợp vào các trang
+                  con của mình.
+                </p>
+                <p>Bạn cũng sẽ muốn chú ý đến độ phân giải của ảnh. Đây là điều quan trọng cần nhớ khi bạn thay đổi tỷ lệ ảnh của mình.</p>
+                <p>
+                  Một máy tính thường hiển thị 72 dot trên mỗi inch (dpi). Đây là mật độ của các chấm trong ảnh mà bạn đăng. 72 dpi là độ phân giải
+                  ảnh lý tưởng nếu bạn muốn hiển thị hình ảnh đẹp trên máy tính.
+                </p>
+                <p>
+                  Bạn cần đảm bảo rằng hình ảnh của bạn trông vẫn rõ ràng và sắc nét sau khi bạn chia tỷ lệ. Tốt nhất là tránh đăng những bức ảnh bị
+                  mờ hoặc méo mó. Bạn cần lưu ý đến 72 dpi để có thể đăng những bức ảnh đẹp mắt cho khách hàng của mình.
+                </p>
+                <p>Khi bạn tích hợp hình ảnh vào trang web của mình, bạn cũng nên suy nghĩ tới cách để chỉnh sửa chúng sau này.</p>
+                <img src="assets/img/blog-details/vi-du-hinh-anh-trong-thiet-ke-web.png" alt="ví dụ về hình ảnh trong thiết kế web" />
+                <h3>5. Sử dụng nhiều hình ảnh cho sản phẩm</h3>
+                <p>
+                  Hình ảnh có tác động rất lớn đến việc mọi người có mua sản phẩm của bạn hay không. Nếu bạn đang đăng sản phẩm lên trang web, bạn sẽ
+                  muốn sử dụng nhiều hình ảnh về sản phẩm của mình.
+                </p>
+                <p>
+                  Khi người dùng nhìn thấy nhiều hình ảnh về sản phẩm của bạn, điều đó sẽ giúp họ hiểu rõ hơn về sản phẩm của bạn. Họ có thể nhìn thấy
+                  sản phẩm từ mọi góc độ. Bạn cũng có thể đăng ảnh để hiển thị quy mô của sản phẩm hoặc hiển thị sản phẩm đang được sử dụng.
+                </p>
+                <p>
+                  Điều này sẽ giúp khách hàng của bạn hiểu rõ hơn về sản phẩm và tự họ nhìn thấy sản phẩm đó. Đó là một cách tuyệt vời để kiếm thêm
+                  chuyển đổi cho doanh nghiệp của bạn.
+                </p>
+                <h3>6. Tích hợp các biểu tượng</h3>
+                <p>
+                  Hình ảnh giúp bạn chia nhỏ văn bản trên trang web của mình và thu hút khách hàng tiềm năng ở lại trên trang của bạn. Nhiều doanh
+                  nghiệp đang thúc đẩy việc thể hiện các từ bằng hình ảnh nhiều hơn, vì vậy họ có thể cắt giảm lượng đọc trên trang web của mình. Các
+                  biểu tượng (icon) là một cách tuyệt vời để cắt văn bản trên trang của bạn.
+                </p>
+                <p>
+                  Bạn có thể sử dụng nhiều loại biểu tượng trên trang web của mình. Có nhiều biểu tượng đã có ý nghĩa tượng trưng mà mọi người nhìn
+                  vào hiểu ngay.
+                </p>
+                <p>
+                  Để truy cập trang chủ, bạn có thể sử dụng biểu tượng trông giống như một ngôi nhà. Mọi người biết rằng khi họ nhìn thấy biểu tượng
+                  đó, nó sẽ đưa họ đến trang chủ.
+                </p>
+                <p>
+                  Bạn cũng có thể sử dụng biểu tượng kính lúp nếu bạn có thanh tìm kiếm trên trang web của mình. Biểu tượng có ý nghĩa của sự tìm kiếm
+                  và mọi người biết rằng họ có thể tìm thấy thanh tìm kiếm bằng cách tìm kiếm biểu tượng này. Nó cũng chiếm ít không gian hơn trên
+                  trang web của bạn so với từ “tìm kiếm”.
+                </p>
+                <p>
+                  Biểu tượng phổ biến nhất cho các cửa hàng thương mại điện tử là giỏ hàng. Mọi người biết rằng họ thêm sản phẩm vào giỏ hàng này và
+                  có thể nhấp vào giỏ hàng đó để xem có gì trong giỏ hàng của họ. Đối tượng của bạn cũng biết rằng họ có thể nhấp vào giỏ hàng khi sẵn
+                  sàng thanh toán.
+                </p>
+                <p>
+                  Các biểu tượng thường có kích thước nhỏ nhưng chúng giúp trang web của bạn trông gọn gàng hơn. Ngoài ra, nó giúp bạn tạo ra một
+                  trang web trông sạch sẽ và có tổ chức.
+                </p>
+                <h3>7. Tối ưu hóa hình ảnh</h3>
+                <p>
+                  Khi bạn sử dụng hình ảnh trên trang web của mình, bạn sẽ cần tối ưu hóa chúng. Các tệp hình ảnh có thể là các tệp lớn chiếm nhiều
+                  dung lượng trên trang web của bạn. Bạn cần đảm bảo rằng bạn đã tối ưu hóa hình ảnh của mình để chúng không làm chậm trang web của
+                  bạn.
+                </p>
+                <p>
+                  Các tệp hình ảnh lớn có thể làm chậm thời gian tải trang của bạn. Phải mất thời gian để trang web của bạn có thể tải hình ảnh, điều
+                  đó có nghĩa là trang web của bạn sẽ mất nhiều thời gian hơn để tải những tệp lớn. Nếu trang của bạn tải quá chậm do các tệp hình ảnh
+                  lớn, bạn có thể bỏ lỡ các khách hàng tiềm năng.
+                </p>
+                <p>
+                  Để ngăn điều này xảy ra, bạn cần tối ưu hóa hình ảnh của mình. Bạn sẽ muốn nén dung lượng tệp ảnh để ảnh tải nhanh hơn. Điều này
+                  cũng sẽ giúp trang web của bạn tải nhanh hơn.
+                </p>
+                <p>
+                  Đó là điều quan trọng cần nhớ, đặc biệt nếu bạn có một trang web nặng về hình ảnh. Nếu bạn sử dụng nhiều hình ảnh trong thiết kế
+                  trang web của mình, bạn cần tối ưu hóa chúng để tránh làm chậm trang web của mình.
+                </p>
+                <h3>Hala Media có thể giúp bạn chọn đúng hình ảnh trong thiết kế web</h3>
+                <p>
+                  Hình ảnh mà bạn sử dụng trên trang web là một phần quan trọng trong việc thiết kế website của bạn. Hình ảnh có tác động rất lớn đến
+                  cách khách hàng tiềm năng trải nghiệm trang web. Bạn sẽ muốn đảm bảo rằng bạn chọn đúng hình ảnh để khách hàng tiềm năng có trải
+                  nghiệm tích cực khi xem qua trang web của doanh nghiệp bạn.
+                </p>
+                <p>
+                  Tại Hala Media, chúng tôi biết cách thiết kế trang web bằng các hình ảnh phù hợp. Chúng tôi là một công ty tiếp thị kỹ thuật số
+                  chuyên về việc thiết kế web tùy chỉnh. Đội ngũ hơn 20 chuyên gia từng đoạt giải thưởng của chúng tôi sẽ giúp bạn tạo ra một trang
+                  web mà mình mơ ước.
+                </p>
+                <p>
+                  Nếu bạn đang cần kết quả để kiểm chứng, thì chúng tôi biết cách tạo ra kết quả. Đến nay, chúng tôi đã giúp mang về doanh thu hơn 300
+                  tỷ đồng và hơn 4 triệu khách hàng tiềm năng cho các khách hàng của chúng tôi. Chúng tôi tập trung vào việc đặt thành công của khách
+                  hàng lên trên bất kỳ điều gì khác.
+                </p>
+                <p>
+                  Những khách hàng của chúng tôi cũng yêu thích công việc mà chúng tôi làm. Trên thực tế, chúng tôi đang hợp tác với hơn 100 khách
+                  hàng đến từ nhiều ngành nghề khác nhau. Hãy liên hệ với chúng tôi để biết cảm giác sẽ như thế nào khi hợp tác với một công ty thiết
+                  kế web hàng đầu như Hala Media!
+                </p>
+                <h3>Tìm hiểu thêm</h3>
+                <p>
+                  Nếu bạn muốn tìm hiểu thêm về cách thêm hình ảnh phù hợp đẻ có thể thu hút khách hàng tiềm năng trên trang web của bạn, hãy gọi cho
+                  chúng tôi ngay hôm nay theo số 0784 169 491 để được trò chuyện với một chuyên gia hoặc liên hệ trực tuyến với chúng tôi.
+                </p>
+                <p>Chúng tôi rất mong nhận được phản hồi từ bạn!</p>
+              </div>
+              <div class="article-footer">
+                <div class="article-tags">
+                  <span>Danh Mục:</span>
+                  <a href="blog/thiet-ke-web/">Thiết Kế Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <aside class="widget-area sticky" id="secondary">
+              <section class="widget widget_techmax_posts_thumb">
+                <h3 class="widget-title">Tài Nguyên Liên Quan</h3>
+                <article class="item">
+                  <a href="blog/thiet-ke-web/thiet-ke-giao-dien-nguoi-dung-website/" class="thumb">
+                    <span class="fullimage cover bg22" role="img"></span>
+                  </a>
+                  <div class="info">
+                    <h4 class="title usmall">
+                      <a href="blog/thiet-ke-web/thiet-ke-giao-dien-nguoi-dung-website/">6 Thủ Thuật Giao Diện Người Dùng Giúp Nâng Tầm Website </a>
+                    </h4>
+                  </div>
+                </article>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Blog Details Area -->
+
+    <!-- Start Footer Section -->
+    <section class="footer-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <div class="footer-heading">
+                <h3>Về Chúng Tôi</h3>
+              </div>
+              <p>
+                Hala Media là công ty chuyên cung cấp các giải pháp, dịch vụ và công nghệ về tiếp thị kỹ thuật số cho các doanh nghiệp. Hơn thế nữa,
+                chúng tôi còn tạo dựng ra các chiến lược tùy chỉnh cho từng khách hàng doanh nghiệp của mình dựa trên nhu cầu và mục tiêu của họ
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <div class="footer-heading">
+                <h3>Dịch Vụ</h3>
+              </div>
+              <ul class="footer-quick-links">
+                <li><a href="dich-vu/seo/">Dịch Vụ SEO</a></li>
+                <li><a href="dich-vu/thiet-ke-website/">Dịch Vụ Thiết Kế Website</a></li>
+                <li><a href="dich-vu/ppc/">Dịch Vụ PPC</a></li>
+                <li><a href="dich-vu/ppc/quang-cao-google/">Dịch Vụ Quảng Cáo Google</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <div class="footer-heading">
+                <h3>Kiến Thức</h3>
+              </div>
+              <ul class="footer-quick-links">
+                <li><a href="blog/marketing/">Marketing</a></li>
+                <li><a href="blog/seo/">SEO</a></li>
+                <li><a href="blog/ppc/">PPC</a></li>
+                <li><a href="blog/thiet-ke-web/">Thiết Kế Website</a></li>
+                <li><a href="blog/truyen-thong-mang-xa-hoi/">Truyền Thông Mạng Xã Hội</a></li>
+                <li><a href="blog/lap-trinh/">Lập Trình</a></li>
+                <li><a href="blog/tin-tuc-hala/">Tin Tức Hala</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <div class="footer-heading">
+                <h3>Thông Tin Liên Hệ</h3>
+              </div>
+              <div class="footer-info-contact">
+                <span><strong>Điện Thoại:</strong> <a href="tel:0784169491">0784 169 491</a></span>
+              </div>
+              <div class="footer-info-contact">
+                <span><strong>Email:</strong> <a href="mailto:info@halamedia.vn">info@halamedia.vn</a></span>
+              </div>
+              <div class="footer-info-contact">
+                <span><strong>Địa Chỉ:</strong> Indochina Park Tower, 4 Nguyễn Đình Chiểu, Phường Đa Kao, Quận 1, TPHCM</span>
+              </div>
+              <div class="footer-info-contact">
+                <span><strong>Mã Số Thuế:</strong> 0318586001</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer Section -->
+
+    <!-- Start Copy Right Section -->
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <p><i class="far fa-copyright"></i> 2024 Hala Media - All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <ul>
+              <li><a href="dieu-khoan-su-dung/">Điều Khoản Sử Dụng</a></li>
+              <li><a href="chinh-sach-bao-mat/">Chính Sách Bảo Mật</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Copy Right Section -->
+
+    <!-- Start Go Top Section -->
+    <div class="go-top">
+      <i class="fas fa-chevron-up"></i>
+      <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- End Go Top Section -->
+
+    <!-- Start Call Now Button -->
+    <div class="hotline-phone-ring-wrap">
+      <div class="hotline-phone-ring">
+        <div class="hotline-phone-ring-circle"></div>
+        <div class="hotline-phone-ring-circle-fill"></div>
+        <div class="hotline-phone-ring-img-circle">
+          <a href="tel:+84784169491" class="pps-btn-img"><img src="assets/img/icon-call-nh.png" alt="gọi ngay" width="70" /></a>
+        </div>
+      </div>
+      <div class="hotline-bar">
+        <a href="tel:+84784169491"><span class="text-hotline">0784 169 491</span></a>
+      </div>
+    </div>
+    <!-- End Call Now Button -->
+
+    <!-- Start Zalo Button -->
+    <div
+      class="zalo-chat-widget"
+      data-oaid="1134601058360719040"
+      data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+      data-autopopup="0"
+      data-width="400"
+      data-height="400"
+    ></div>
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+    <!-- End Zalo Button -->
+
+    <!-- jQuery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- MeanMenu JS  -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Appear Min JS -->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!-- CounterUp Min JS -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- WOW Min JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- link translate -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

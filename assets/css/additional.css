@@ -1,0 +1,355 @@
+/* Additional CSS */
+ul.article-list {
+    list-style-type: disc !important;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+    color: #5f5f5f;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ol.article-list {
+    list-style-type: decimal !important;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+    color: #5f5f5f;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.page-title-content h1 {
+    color: #ffffff;
+}
+
+a.internal-link, a.list-link {
+    text-decoration: underline;
+    text-decoration-color: #D2DCEE;
+    text-underline-position: under;
+    word-break: break-word;
+    background-color: transparent;
+    color: #4c74b9;
+}
+
+a.internal-link:hover, a.list-link:hover {
+    text-decoration-color: #207DE9;
+}
+
+p#totalPrice {
+    margin-top: 20px;
+}
+
+div.article-image img{
+    width: 800px;
+}
+
+.article-content img {
+    margin-bottom: 20px;
+}
+
+ul.accordion-content li a {
+    font-size: 15px;
+}
+
+.blog-content h3 a {
+    font-size: 21px;
+}
+
+.blog-content p {
+    font-size: 17px !important;
+}
+
+.blog-image a img{
+    height: 240px;
+    width: 400px;
+}
+
+ul.footer-quick-links li a, .footer-info-contact span a, .footer-info-contact span, .single-footer-widget p, .main-banner-content p, .single-services-item p, .hire-content p {
+    font-size: 18px !important;
+}
+
+div.footer-heading h3 {
+    font-size: 22px !important;
+    text-transform: uppercase;
+}
+
+.single-services-item h3 {
+    font-size: 22px !important;
+}
+
+.single-blog-item {
+    text-align: left !important;
+}
+
+.list-link {
+    color: #5f5f5f !important;
+    font-size: 15px;
+}
+
+.article-content h3 {
+    font-size: 30px !important;
+}
+
+/* Table Style */
+.table {
+    font-size: 20px;
+    overflow: hidden;
+}
+
+th:first-child, td:first-child, th:nth-child(3), th:nth-child(5), td:nth-child(3), td:nth-child(5) {
+    background-color: #eaeff7 !important;
+}
+
+.table td:first-child, .table th:first-child {
+    text-align: left;
+    padding: 28px;
+}
+
+.table th {
+    height: 80px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table th:last-child, .table td:last-child {
+    border-right: 1px solid rgb(222, 226, 230);
+}
+
+.icon-checkmark {
+    background-image: url(/assets/img/icon-check.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+tfoot td {
+    border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+.page-title-content {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .container > .hire-btn {
+		display: none;
+	}
+}
+
+.cta-straight-contact {
+    background-color: #26b16d;
+    border-radius: 4px;
+    padding: 24px;
+    width: 100%;
+    background-image: url(/assets/img/cta-side-background.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 30px;
+}
+
+.sticky {
+    position: sticky;
+    top: 120px;
+}
+
+.listMenu {
+    overflow-y: scroll !important;
+    height: 100%;
+    line-height: 40px;
+}
+
+img.first-service-page {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+}
+
+img.service-page {
+    width: 100%;
+    display: block;
+}
+
+/* Call Now Button */
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.hotline-phone-ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #e60808;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: .5;
+}
+
+.hotline-phone-ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-color: rgba(230,8,8,0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.hotline-phone-ring-img-circle {
+    background-color: #e60808;
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .hotline-phone-ring-img-circle .pps-btn-img {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+        .hotline-phone-ring-img-circle .pps-btn-img img {
+            width: 20px;
+            height: 20px;
+        }
+.hotline-bar {
+    position: absolute;
+    background: rgba(230,8,8,0.75);
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 50px !important;
+    left: 33px;
+    bottom: 37px;
+}
+    .hotline-bar > a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        text-indent: 50px;
+        display: block;
+        letter-spacing: 1px;
+        line-height: 40px;
+        font-family: Arial;
+    }
+        .hotline-bar > a:hover, .hotline-bar > a:active {
+            color: #fff;
+        }
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+        -webkit-opacity: .1;
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        -webkit-opacity: .5;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: .1;
+    }
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: .6;
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: .6;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: .6;
+    }
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+@media (max-width: 768px) {
+    .hotline-bar {
+        display: none;
+    }
+}

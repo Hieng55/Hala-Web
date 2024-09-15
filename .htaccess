@@ -1,0 +1,146 @@
+<IfModule mod_rewrite.c>
+
+
+
+  
+
+
+
+  #Remove HTML extension
+
+  RewriteEngine On
+
+  RewriteBase /
+
+  RewriteCond %{SCRIPT_FILENAME} !-d
+
+  RewriteCond %{SCRIPT_FILENAME}\.html -f
+
+  RewriteRule ^([^.]+)/$ $1.html [NC,L]
+
+
+
+
+
+  
+
+
+
+
+
+</IfModule>
+
+
+
+  DirectoryIndex index.html
+
+  ErrorDocument 404 /khong-tim-thay.html
+
+
+
+#Remove HTML extension
+
+#<IfModule mod_rewrite.c>
+
+  #RewriteBase /
+
+  #RewriteEngine on
+
+  #RewriteCond %{REQUEST_FILENAME} !-d
+
+  #RewriteCond %{REQUEST_FILENAME}\.html -f
+
+  #RewriteRule ^([^/]+)/$ $1.html
+
+#</IfModule>
+
+
+
+#Redirect to new extensionless file
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine on
+
+  RewriteBase /
+
+  RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*[^.]+\.html(\?[^\ ]*)?\ HTTP/
+
+  RewriteRule ^(([^/]+/)*[^.]+)\.html$ /$1 [R=301,L]
+
+</IfModule>
+
+
+
+
+
+#Force HTTPS
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} !=on
+
+  RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+
+</IfModule>
+
+
+
+#Force WWW
+
+<IfModule mod_rewrite.c>
+
+
+
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} =on
+
+  RewriteRule ^ - [E=PROTO:https]
+
+  RewriteCond %{HTTPS} !=on
+
+  RewriteRule ^ - [E=PROTO:http]
+
+
+
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+
+  RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+
+</IfModule>
+
+
+
+#Force Trail Slash
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+
+  RewriteBase /
+
+  RewriteCond %{SCRIPT_FILENAME} !-f
+
+  RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
+
+</IfModule>
+
+<IfModule mod_deflate.c>
+
+# Enable gzip compression
+SetOutputFilter DEFLATE
+
+# Define file types to compress (replace with your desired types)
+<FilesMatch ".html .js .css .txt">
+  Header set Content-Encoding gzip
+</FilesMatch>
+
+# Optional: Set compression level (1-9, higher means slower compression but smaller files)
+<IfModule deflate_module>
+  DeflateCompressionLevel 5
+</IfModule>
+
+</IfModule>
