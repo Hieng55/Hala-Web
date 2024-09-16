@@ -102,6 +102,33 @@
 
       gtag("config", "G-T94SZ99XXS");
     </script>
+    <style>
+      #secondary ul {
+        max-height: 0;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-top: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      #secondary ul.active {
+        max-height: 350px;
+      }
+      .sidebar_list svg{
+        transition: 0.5s;
+      }
+      .sidebar_list svg.active {
+        transform: rotate(360deg) !important;
+       
+      }
+
+      #secondary ul li a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 16px;
+      }
+    </style>
   </head>
 
   <body>
@@ -1464,13 +1491,34 @@
           <div class="col-lg-3 col-md-12" style="margin-top: 20px">
             <aside class="widget-area" id="secondary" style="margin-top: 20px; position: sticky; top: 120px">
               <div class="sidebar">
-                <p style="font-weight: bolder; font-size: 22px">Mục Lục</p>
-                <p><a href="dich-vu/seo/#goi" class="list-link">Các Gói Dịch Vụ SEO</a></p>
-                <p><a href="dich-vu/seo/#tong-quan" class="list-link">Tổng Quan</a></p>
-                <p><a href="dich-vu/seo/#giao-pham" class="list-link">Giao Phẩm</a></p>
-                <p><a href="dich-vu/seo/#quan-ly" class="list-link">Quản Lý Chiến Lược SEO</a></p>
-                <p><a href="dich-vu/seo/#faq" class="list-link">Những Câu Hỏi Thường Gặp</a></p>
-                <p><a href="dich-vu/seo/#hala-media" class="list-link">Dịch Vụ SEO Hala Media</a></p>
+                <div
+                  class="sidebar_list"
+                  style="
+                    font-weight: bolder;
+                    font-size: 22px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    padding: 10px 20px;
+                    text-align: center;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                  "
+                >
+                  <p id="list_secondary" class="m-0">Mục Lục</p>
+                  <svg style="transform: rotate(180deg)" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" />
+                  </svg>
+                </div>
+                <ul>
+                  <li><a href="dich-vu/seo/#goi" class="list-link">Các Gói Dịch Vụ SEO</a></li>
+                  <li><a href="dich-vu/seo/#tong-quan" class="list-link">Tổng Quan</a></li>
+                  <li><a href="dich-vu/seo/#giao-pham" class="list-link">Giao Phẩm</a></li>
+                  <li><a href="dich-vu/seo/#quan-ly" class="list-link">Quản Lý Chiến Lược SEO</a></li>
+                  <li><a href="dich-vu/seo/#faq" class="list-link">Những Câu Hỏi Thường Gặp</a></li>
+                  <li><a href="dich-vu/seo/#hala-media" class="list-link">Dịch Vụ SEO Hala Media</a></li>
+                </ul>
               </div>
             </aside>
           </div>
@@ -1742,5 +1790,11 @@
     <script src="assets/js/main.js"></script>
     <!-- link translate -->
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      document.querySelector(".sidebar_list").addEventListener("click", () => {
+        document.querySelector(".sidebar ul").classList.toggle("active");
+        document.querySelector(".sidebar_list svg").classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
