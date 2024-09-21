@@ -4327,3 +4327,11 @@ blockquote::after,
 .select_language .vietnam_lang.active {
   display: block;
 }
+#goog-gt-tt {
+  display: none !important;
+  visibility: hidden !important;
+}
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}

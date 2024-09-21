@@ -307,6 +307,10 @@ function resetToOriginalLanguage() {
   location.reload();
 }
 document.addEventListener("DOMContentLoaded", function () {
+  const googleOriginalText = document.querySelector("#goog-gt-tt");
+  if (googleOriginalText) {
+    googleOriginalText.innerHTML = "";
+  }
   let language = JSON.parse(localStorage.getItem("lang"));
   if (language) {
     translateLanguage(language);

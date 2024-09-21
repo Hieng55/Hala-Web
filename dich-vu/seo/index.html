@@ -115,18 +115,24 @@
       #secondary ul.active {
         max-height: 350px;
       }
-      .sidebar_list svg{
+
+      .sidebar_list svg {
         transition: 0.5s;
       }
       .sidebar_list svg.active {
         transform: rotate(360deg) !important;
-       
       }
 
       #secondary ul li a {
         display: block;
         padding: 15px 20px;
         font-size: 16px;
+      }
+
+      #list_secondary {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -1511,7 +1517,7 @@
                     <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" />
                   </svg>
                 </div>
-                <ul>
+                <ul class="seo">
                   <li><a href="dich-vu/seo/#goi" class="list-link">Các Gói Dịch Vụ SEO</a></li>
                   <li><a href="dich-vu/seo/#tong-quan" class="list-link">Tổng Quan</a></li>
                   <li><a href="dich-vu/seo/#giao-pham" class="list-link">Giao Phẩm</a></li>
